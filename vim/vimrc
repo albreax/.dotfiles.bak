@@ -1,0 +1,47 @@
+" BASIC SETUP:
+
+" no vi
+set nocompatible
+
+" enable syntax and plugins:
+syntax enable
+filetype plugin on
+
+set number relativenumber
+set ruler
+
+" Set encoding
+set encoding=utf-8
+
+" Whitespace stuff
+set nowrap
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" Plugins
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+	" editing file
+	Plug 'https://github.com/terryma/vim-multiple-cursors'
+	Plug 'https://github.com/tpope/vim-surround'
+	" file management
+	Plug 'https://github.com/junegunn/fzf.vim'
+	Plug 'scrooloose/nerdtree'
+	Plug 'w0rp/ale'
+    Plug 'fatih/vim-go'
+call plug#end()
+
+" Plugin Config
+map <C-b> :NERDTreeToggle<CR>
+map ; :Files<CR>
