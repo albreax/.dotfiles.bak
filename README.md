@@ -4,6 +4,6 @@
 
 ```sh
 cd ~
-clone git
+clone git@github.com:albreax/.dotfiles.git
 .dotfiles/install.sh
 ```
