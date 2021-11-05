@@ -21,3 +21,5 @@ rm -rf $VIM
 ln -s $BASEDIR/zsh/zshrc $ZSHRC
 ln -s $BASEDIR/zsh/zshenv $ZSHENV
 ln -s $BASEDIR/vim $VIM
+
+

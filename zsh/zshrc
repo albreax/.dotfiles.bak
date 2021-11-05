@@ -72,6 +72,7 @@ plugins=(
   node
   npm
   iterm2
+  fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
