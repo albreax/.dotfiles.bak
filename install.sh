@@ -8,7 +8,9 @@ else
     brew update
 fi
  
-brew install bat 
+brew install bat
+brew install tldr
+brew install exa
 
 ZSHRC=$HOME/.zshrc 
 ZSHENV=$HOME/.zshenv 
