@@ -8,7 +8,7 @@ else
     brew update
 fi
  
-brew install nvm 
+brew install bat 
 
 ZSHRC=$HOME/.zshrc 
 ZSHENV=$HOME/.zshenv 
